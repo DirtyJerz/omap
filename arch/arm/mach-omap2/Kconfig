@@ -399,4 +399,11 @@ config FORCE_FAST_CHARGE
 	  A simple sysfs interface to force adapters that
 	  are detected as USB to charge as AC.
 
+config FORCE_DOCK_MODE
+	bool "Force POGO charge into docked mode"
+	default y
+	help
+	  A sysfs interface to force phone into a selectable
+	  docked mode when POGO dock detection fails.
+
 endif
